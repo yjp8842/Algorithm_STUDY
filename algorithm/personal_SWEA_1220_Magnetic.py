@@ -1,3 +1,5 @@
+# SWEA_1220_Magnetic
+
 import sys
 sys.stdin = open('input.txt', 'r')
 
