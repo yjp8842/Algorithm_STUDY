@@ -18,13 +18,14 @@ r_list = sorted(D, reverse=True)
 for i in r_list:
     cal = C + i
     price = A + B
-    
+  
     if (cal / price) > (C / A):
         (C / A) == (cal / price)
         
         A += B
         C += i
     
+    # 값이 작아지는 순간 break -> C / A : 1원당 열량의 최댓값
     else:
         break
 
