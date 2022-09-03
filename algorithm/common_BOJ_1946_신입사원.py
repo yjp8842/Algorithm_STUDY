@@ -19,3 +19,5 @@ for i in range(1, T + 1):
             people += 1
     
     print(people)
+    
+    # readline 사용해서 시간초과 방지
