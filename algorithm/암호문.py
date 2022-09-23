@@ -14,13 +14,13 @@ for tc in range(1, 10 + 1):
             for j in range(1, count + 1):
                 num_list.insert(index + j - 1, int(word_list[i + 2 + j]))
 
-        elif word_list[i] == 'D':
+        if word_list[i] == 'D':
             index = int(word_list[i + 1])
             count = int(word_list[i + 2])
             for j in range(count):
                 del num_list[index]
 
-        elif word_list[i] == 'A':
+        if word_list[i] == 'A':
             count = int(word_list[i + 1])
             for j in range(1, count + 1):
                 num_list.append(word_list[i + 1 + j])
