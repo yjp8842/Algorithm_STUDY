@@ -4,6 +4,7 @@ N = int(input())
 num_list = list(map(int, input().split()))
 operator_list = list(map(int, input().split()))
 
+lst = ['+', '-', '*', '/']
 # 연산자의 개수만큼 하나의 리스트에 다 넣어주기
 op_list = []
 for _ in range(operator_list[0]):
@@ -22,6 +23,8 @@ else:
     perm_op = list(permutations(op_list, len(op_list))) 
 
 cal_l = []
+max_n = 0
+min_n = 0
 for j in range(len(perm_op)):
     num = num_list[0]
     for k in range(len(perm_op[j])):
