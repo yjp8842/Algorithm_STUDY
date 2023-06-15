@@ -1,8 +1,7 @@
 def solution(citations):
-    citations.sort()
-    article_count = len(citations)
+    sort_citations = sorted(citations)
 
-    for i in range(article_count):
-        if citations[i] >= article_count-i:
-            return article_count-i
+    for i in range(len(citations)):
+        if sort_citations[i] >= len(citations) - i:
+            return len(citations) - i
     return 0
