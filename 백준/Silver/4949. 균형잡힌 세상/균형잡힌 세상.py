@@ -7,7 +7,7 @@ while 1:
   tests = []
   for i in range(len(str_s)):
     if str_s[i] == ')':
-      if tests and tests[len(tests) - 1] == '(':
+      if tests and tests[-1] == '(':
         tests.pop()
       else:
         tests.append(str_s[i])
@@ -16,7 +16,7 @@ while 1:
       tests.append(str_s[i])
     
     elif str_s[i] == ']':
-      if tests and tests[len(tests) - 1] == '[':
+      if tests and tests[-1] == '[':
         tests.pop()
       else:
         tests.append(str_s[i])
