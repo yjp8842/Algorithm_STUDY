@@ -25,7 +25,7 @@ def bfs(x):
       if visited[i] == 0:
         visited[i] = 1
         queue.append(i)
-        # 방문할 때마다 이전 거리에서 +1
+        # 방문할 때마다 현재 위치에서 +1
         distance[i] = distance[x] + 1
         
         # 거리가 K가 되면 cities라는 결과 리스트에 추가  
